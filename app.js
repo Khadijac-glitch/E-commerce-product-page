@@ -79,34 +79,34 @@ function deleteItem() {
   conteurValue = 0; 
 }
 
-images.forEach((image) => {
-  image.addEventListener("click", () => {
-      const lastImg = document.querySelectorAll(".select");
-      if (lastImg.length > 0) {
-          lastImg[0].classList.remove("select");
-      }
-      image.classList.add("select");
-      const selectedImg = document.querySelector(".select");
-      switch (selectedImg.getAttribute("src")) {
-          case "images(0).jpg":
-              mainThumbnail.src = "images(0).jpg";
-              mainThumbnailLightBox.src = "images(0).jpg";
-              break;
-          case "images.jpeg":
-              mainThumbnail.src = "images.jpeg";
-              mainThumbnailLightBox.src = "images.jpeg";
-              break;
-          case "images (1).jpeg":
-              mainThumbnail.src = "images (1).jpeg";
-              mainThumbnailLightBox.src = "images (1).jpeg";
-              break;
-          case "images (2).jpeg":
-              mainThumbnail.src = "images (2).jpeg";
-              mainThumbnailLightBox.src = "images (2).jpeg";
-              break;
-      }
-  });
-});
+// images.forEach((image) => {
+//   image.addEventListener("click", () => {
+//       const lastImg = document.querySelectorAll(".select");
+//       if (lastImg.length > 0) {
+//           lastImg[0].classList.remove("select");
+//       }
+//       image.classList.add("select");
+//       const selectedImg = document.querySelector(".select");
+//       switch (selectedImg.getAttribute("src")) {
+//           case "images(0).jpg":
+//               mainThumbnail.src = "images(0).jpg";
+//               mainThumbnailLightBox.src = "images(0).jpg";
+//               break;
+//           case "images.jpeg":
+//               mainThumbnail.src = "images.jpeg";
+//               mainThumbnailLightBox.src = "images.jpeg";
+//               break;
+//           case "images (1).jpeg":
+//               mainThumbnail.src = "images (1).jpeg";
+//               mainThumbnailLightBox.src = "images (1).jpeg";
+//               break;
+//           case "images (2).jpeg":
+//               mainThumbnail.src = "images (2).jpeg";
+//               mainThumbnailLightBox.src = "images (2).jpeg";
+//               break;
+//       }
+//   });
+// });
   function toggleCart() {
     cart.classList.toggle("invisible");
   }
